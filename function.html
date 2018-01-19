@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+
+    console.log( get_last_elements([7,9,0,-2]));
+    console.log( get_last_elements([7,9,0,-2],3));
+    console.log( get_last_elements([7,9,0,-2],6));
+
+    function get_last_elements(array,n)
+    {
+         array = [];
+        if (n == null) {
+         var array_last = array.length - 1;
+            return (array_last);
+
+        }
+        else {
+            var return_element = array.slice(n);
+            return(return_element);
+        }
+    }
+
+
+</script>
+</body>
+</html>
